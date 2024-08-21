@@ -58,6 +58,6 @@ Open the Jupyter Notebook `GNNs_ADNI.ipynb` to start running the analysis.
 
 ## Data
 
-The edge data is located in `data/ADNI/fmri_edge`. On GitHub, only cosine and pearson correlation data are provided. For more data, refer to the following link:
+The edge data of ADNI is located in `data/ADNI/fmri_edge`. On GitHub, only cosine and pearson correlation data are provided. For more data, refer to the following link:
 [Google Drive - Additional Data](https://drive.google.com/drive/folders/1ED1b7RoSdeqKnxfGUKM2zHUfqgP3fTzV)
 
