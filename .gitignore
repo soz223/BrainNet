@@ -10,6 +10,10 @@ __pycache__/
 classification/NeuroGraph/__pycache__
 classification/NeuroGraph/checkpoints/
 
+# Ignore more data
+#data/ADNI/fmri_edge/*
+data/ADNI/fmri_edge/inverse_covariance_alpha=0.25
+
 # Distribution / packaging
 .Python
 build/
