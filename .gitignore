@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Trained Models
+classification/NeuroGraph/__pycache__
+classification/NeuroGraph/checkpoints/
+
 # Distribution / packaging
 .Python
 build/
