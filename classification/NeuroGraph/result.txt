@@ -1,0 +1,2 @@
+dataset: ADNI, model: GCNConv, seed: 42, test_acc: 0.7327586206896551, test_loss: 0.04242035374045372, test_metrics: {'accuracy': 0.7327586206896551, 'auroc': 0.3977229601518027, 'sensitivity': 1.0, 'specificity': 0.0, 'f1_score': 0.845771144278607}
+--------------------------------------------
