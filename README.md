@@ -14,7 +14,7 @@ To run the project, you first need to set up the environment. You can do this us
 
 2. **Activate the Conda environment**:
    ```bash
-   conda activate your_env_name
+   conda activate brainnet
    ```
    Replace `your_env_name` with the name specified in your `environment.yml` file, or simply use the default environment name.
 
