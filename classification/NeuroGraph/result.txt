@@ -719,3 +719,93 @@ _edge_dir_prefixpartial_correlation_partial_correlation_lr1e-05_epochs500_
 _edge_dir_prefixassociated_high_order_fc_associated_high_order_fc_lr1e-05_epochs500_
 {'accuracy': 0.7758620689655172, 'auroc': 0.8318785578747627, 'sensitivity': 0.9058823529411765, 'specificity': 0.41935483870967744, 'f1_score': 0.8555555555555555}
 --------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.001_epochs100_
+{'accuracy': 0.7931034482758621, 'auroc': 0.8569259962049336, 'sensitivity': 0.9882352941176471, 'specificity': 0.25806451612903225, 'f1_score': 0.875}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0005_epochs100_
+{'accuracy': 0.8362068965517241, 'auroc': 0.879696394686907, 'sensitivity': 0.9764705882352941, 'specificity': 0.45161290322580644, 'f1_score': 0.8972972972972973}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0002_epochs100_
+{'accuracy': 0.7931034482758621, 'auroc': 0.8485768500948767, 'sensitivity': 0.8705882352941177, 'specificity': 0.5806451612903226, 'f1_score': 0.8604651162790697}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0001_epochs100_
+{'accuracy': 0.8706896551724138, 'auroc': 0.9104364326375712, 'sensitivity': 0.9647058823529412, 'specificity': 0.6129032258064516, 'f1_score': 0.9162011173184358}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr5e-05_epochs100_
+{'accuracy': 0.8448275862068966, 'auroc': 0.8728652751423149, 'sensitivity': 0.9647058823529412, 'specificity': 0.5161290322580645, 'f1_score': 0.9010989010989011}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr1e-05_epochs100_
+{'accuracy': 0.8275862068965517, 'auroc': 0.794686907020873, 'sensitivity': 0.9411764705882353, 'specificity': 0.5161290322580645, 'f1_score': 0.8888888888888888}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.001_epochs200_
+{'accuracy': 0.7672413793103449, 'auroc': 0.8990512333965844, 'sensitivity': 1.0, 'specificity': 0.12903225806451613, 'f1_score': 0.8629441624365483}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0005_epochs200_
+{'accuracy': 0.8448275862068966, 'auroc': 0.8683111954459203, 'sensitivity': 0.9294117647058824, 'specificity': 0.6129032258064516, 'f1_score': 0.8977272727272727}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0002_epochs200_
+{'accuracy': 0.8793103448275862, 'auroc': 0.9100569259962048, 'sensitivity': 0.9882352941176471, 'specificity': 0.5806451612903226, 'f1_score': 0.9230769230769231}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0001_epochs200_
+{'accuracy': 0.8189655172413793, 'auroc': 0.869449715370019, 'sensitivity': 1.0, 'specificity': 0.3225806451612903, 'f1_score': 0.8900523560209425}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr5e-05_epochs200_
+{'accuracy': 0.8448275862068966, 'auroc': 0.8827324478178368, 'sensitivity': 0.9764705882352941, 'specificity': 0.4838709677419355, 'f1_score': 0.9021739130434783}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr1e-05_epochs200_
+{'accuracy': 0.8189655172413793, 'auroc': 0.8690702087286528, 'sensitivity': 1.0, 'specificity': 0.3225806451612903, 'f1_score': 0.8900523560209425}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.001_epochs300_
+{'accuracy': 0.8362068965517241, 'auroc': 0.8751423149905123, 'sensitivity': 0.8941176470588236, 'specificity': 0.6774193548387096, 'f1_score': 0.8888888888888888}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0005_epochs300_
+{'accuracy': 0.7586206896551724, 'auroc': 0.8068311195445921, 'sensitivity': 0.9529411764705882, 'specificity': 0.22580645161290322, 'f1_score': 0.8526315789473684}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0002_epochs300_
+{'accuracy': 0.853448275862069, 'auroc': 0.8728652751423149, 'sensitivity': 0.9882352941176471, 'specificity': 0.4838709677419355, 'f1_score': 0.9081081081081082}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0001_epochs300_
+{'accuracy': 0.8103448275862069, 'auroc': 0.872865275142315, 'sensitivity': 0.8235294117647058, 'specificity': 0.7741935483870968, 'f1_score': 0.8641975308641975}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr5e-05_epochs300_
+{'accuracy': 0.8189655172413793, 'auroc': 0.8451612903225806, 'sensitivity': 0.9176470588235294, 'specificity': 0.5483870967741935, 'f1_score': 0.8813559322033898}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr1e-05_epochs300_
+{'accuracy': 0.8620689655172413, 'auroc': 0.8652751423149906, 'sensitivity': 0.9764705882352941, 'specificity': 0.5483870967741935, 'f1_score': 0.9120879120879121}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.001_epochs400_
+{'accuracy': 0.7758620689655172, 'auroc': 0.859203036053131, 'sensitivity': 0.788235294117647, 'specificity': 0.7419354838709677, 'f1_score': 0.8375}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0005_epochs400_
+{'accuracy': 0.8103448275862069, 'auroc': 0.850853889943074, 'sensitivity': 0.8588235294117647, 'specificity': 0.6774193548387096, 'f1_score': 0.8690476190476191}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0002_epochs400_
+{'accuracy': 0.7672413793103449, 'auroc': 0.7981024667931689, 'sensitivity': 1.0, 'specificity': 0.12903225806451613, 'f1_score': 0.8629441624365483}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0001_epochs400_
+{'accuracy': 0.8362068965517241, 'auroc': 0.8842504743833017, 'sensitivity': 0.9882352941176471, 'specificity': 0.41935483870967744, 'f1_score': 0.8983957219251337}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr5e-05_epochs400_
+{'accuracy': 0.8620689655172413, 'auroc': 0.8648956356736243, 'sensitivity': 0.9411764705882353, 'specificity': 0.6451612903225806, 'f1_score': 0.9090909090909091}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr1e-05_epochs400_
+{'accuracy': 0.7672413793103449, 'auroc': 0.83719165085389, 'sensitivity': 0.8, 'specificity': 0.6774193548387096, 'f1_score': 0.8343558282208589}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.001_epochs500_
+{'accuracy': 0.8362068965517241, 'auroc': 0.8398481973434535, 'sensitivity': 0.8941176470588236, 'specificity': 0.6774193548387096, 'f1_score': 0.8888888888888888}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0005_epochs500_
+{'accuracy': 0.8275862068965517, 'auroc': 0.8641366223908918, 'sensitivity': 0.8823529411764706, 'specificity': 0.6774193548387096, 'f1_score': 0.8823529411764706}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0002_epochs500_
+{'accuracy': 0.853448275862069, 'auroc': 0.8755218216318785, 'sensitivity': 0.9647058823529412, 'specificity': 0.5483870967741935, 'f1_score': 0.9060773480662984}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr0.0001_epochs500_
+{'accuracy': 0.8620689655172413, 'auroc': 0.8755218216318785, 'sensitivity': 0.9764705882352941, 'specificity': 0.5483870967741935, 'f1_score': 0.9120879120879121}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr5e-05_epochs500_
+{'accuracy': 0.8275862068965517, 'auroc': 0.815180265654649, 'sensitivity': 0.9176470588235294, 'specificity': 0.5806451612903226, 'f1_score': 0.8863636363636364}
+--------------------------------
+_edge_dir_prefixcombined_correlation_combined_correlation_lr1e-05_epochs500_
+{'accuracy': 0.8017241379310345, 'auroc': 0.8413662239089185, 'sensitivity': 0.9764705882352941, 'specificity': 0.3225806451612903, 'f1_score': 0.8783068783068783}
+--------------------------------
