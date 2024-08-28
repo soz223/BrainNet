@@ -809,3 +809,9 @@ _edge_dir_prefixcombined_correlation_combined_correlation_lr5e-05_epochs500_
 _edge_dir_prefixcombined_correlation_combined_correlation_lr1e-05_epochs500_
 {'accuracy': 0.8017241379310345, 'auroc': 0.8413662239089185, 'sensitivity': 0.9764705882352941, 'specificity': 0.3225806451612903, 'f1_score': 0.8783068783068783}
 --------------------------------
+_edge_dir_prefixassociated_high_order_fc_associated_high_order_fc_lr0.1_epochs100_
+{'accuracy': 0.7327586206896551, 'auroc': 0.7130929791271347, 'sensitivity': 1.0, 'specificity': 0.0, 'f1_score': 0.845771144278607}
+--------------------------------
+_edge_dir_prefixassociated_high_order_fc_associated_high_order_fc_lr0.01_epochs100_
+{'accuracy': 0.7844827586206896, 'auroc': 0.837571157495256, 'sensitivity': 0.8941176470588236, 'specificity': 0.4838709677419355, 'f1_score': 0.8587570621468926}
+--------------------------------
