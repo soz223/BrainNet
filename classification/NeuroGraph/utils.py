@@ -18,6 +18,34 @@ import tqdm
 
 softmax = torch.nn.LogSoftmax(dim=1)
 
+# Patterned data generator
+def generate_complex_patterned_data(num_samples, num_rois, time_steps):
+    X = torch.zeros(num_samples, num_rois, time_steps)
+    y = torch.zeros(num_samples, dtype=torch.long)
+
+    for i in range(num_samples):
+        for roi in range(num_rois):
+            # Mix of sinusoidal, linear, and random noise patterns
+            if i < num_samples // 2:
+                # Class 0: Mix of patterns with more emphasis on sinusoidal
+                signal = (
+                    0.6 * torch.sin(torch.linspace(0, 2 * np.pi, time_steps)) +
+                    0.3 * torch.linspace(0, 1, time_steps) +
+                    0.1 * torch.randn(time_steps)
+                )
+            else:
+                # Class 1: Mix of patterns with more emphasis on linear
+                signal = (
+                    0.3 * torch.sin(torch.linspace(0, 2 * np.pi, time_steps)) +
+                    0.6 * torch.linspace(0, 1, time_steps) +
+                    0.1 * torch.randn(time_steps)
+                )
+            X[i, roi, :] = signal
+
+        y[i] = 0 if i < num_samples // 2 else 1
+
+    return X, y
+
 class TimeSeriesEncoder(nn.Module):
     def __init__(self, num_rois, time_steps, embedding_size):
         super(TimeSeriesEncoder, self).__init__()
