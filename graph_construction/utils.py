@@ -113,10 +113,9 @@ def cross_correlation(data):
     for i in range(num_rois):    
         for j in range(num_rois):
             cross_corr_matrix[i, j] = np.corrcoef(data.iloc[:, i], data.iloc[:, j])[0, 1]
-    
     return cross_corr_matrix
 
-def compute_granger_causality_matrix(data, max_lag=1):
+def granger_causality(data, max_lag=1):
     num_rois = data.shape[1]
     granger_matrix = np.zeros((num_rois, num_rois))
 
