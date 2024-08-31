@@ -1001,3 +1001,6 @@ _edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.001_epochs100_edge_perce
 _edge_dir_prefixKNN_Graph_knn_graph__lr0.001_epochs100_edge_percent_to_keep0.1_
 {'accuracy': 0.6111111111111112, 'auroc': 0.664928292046936, 'sensitivity': 0.6101694915254238, 'specificity': 0.6153846153846154, 'f1_score': 0.72}
 --------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.001_epochs100_edge_percent_to_keep0.1_
+{'accuracy': 0.8129032258064516, 'auroc': 0.8712984884775166, 'sensitivity': 0.8678291316526611, 'specificity': 0.6362236024844721, 'f1_score': 0.8745558517778429}
+--------------------------------
