@@ -1034,3 +1034,6 @@ _edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.0002_epochs200_edge_perc
 _edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.0001_epochs200_edge_percent_to_keep0.1_
 {'accuracy': 0.8150537634408602, 'auroc': 0.8512476352859984, 'sensitivity': 0.8639075630252101, 'specificity': 0.6761573498964804, 'f1_score': 0.8745700113519262}
 --------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr5e-05_epochs200_edge_percent_to_keep0.1_
+{'accuracy': 0.821505376344086, 'auroc': 0.868275754746343, 'sensitivity': 0.8967366946778711, 'specificity': 0.5936231884057971, 'f1_score': 0.8826291450659879}
+--------------------------------
