@@ -1004,3 +1004,33 @@ _edge_dir_prefixKNN_Graph_knn_graph__lr0.001_epochs100_edge_percent_to_keep0.1_
 _edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.001_epochs100_edge_percent_to_keep0.1_
 {'accuracy': 0.8129032258064516, 'auroc': 0.8712984884775166, 'sensitivity': 0.8678291316526611, 'specificity': 0.6362236024844721, 'f1_score': 0.8745558517778429}
 --------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.001_epochs100_edge_percent_to_keep0.1_
+{'accuracy': 0.810752688172043, 'auroc': 0.8641720591618289, 'sensitivity': 0.9051633986928105, 'specificity': 0.5220041407867495, 'f1_score': 0.8772035107504141}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.0005_epochs100_edge_percent_to_keep0.1_
+{'accuracy': 0.7870967741935484, 'auroc': 0.8475345403862027, 'sensitivity': 0.827563025210084, 'specificity': 0.6588819875776398, 'f1_score': 0.8530791722936384}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.0002_epochs100_edge_percent_to_keep0.1_
+{'accuracy': 0.8021505376344086, 'auroc': 0.8724600062247122, 'sensitivity': 0.8535340802987863, 'specificity': 0.6601573498964803, 'f1_score': 0.8649782507280122}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.0001_epochs100_edge_percent_to_keep0.1_
+{'accuracy': 0.832258064516129, 'auroc': 0.8635252709779564, 'sensitivity': 0.9285154061624649, 'specificity': 0.540223602484472, 'f1_score': 0.8925124041420253}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr5e-05_epochs100_edge_percent_to_keep0.1_
+{'accuracy': 0.8129032258064516, 'auroc': 0.859680983504513, 'sensitivity': 0.8811577964519142, 'specificity': 0.5922153209109731, 'f1_score': 0.8742861321307919}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr1e-05_epochs100_edge_percent_to_keep0.1_
+{'accuracy': 0.7311827956989247, 'auroc': 0.7897626896169097, 'sensitivity': 0.7442483660130719, 'specificity': 0.6873209109730849, 'f1_score': 0.7957139265962796}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.001_epochs200_edge_percent_to_keep0.1_
+{'accuracy': 0.8301075268817204, 'auroc': 0.8593011678101193, 'sensitivity': 0.9087488328664799, 'specificity': 0.5914037267080745, 'f1_score': 0.8891785881200516}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.0005_epochs200_edge_percent_to_keep0.1_
+{'accuracy': 0.8344086021505376, 'auroc': 0.8647466542172424, 'sensitivity': 0.9060504201680672, 'specificity': 0.6176231884057971, 'f1_score': 0.891464865582914}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.0002_epochs200_edge_percent_to_keep0.1_
+{'accuracy': 0.832258064516129, 'auroc': 0.8696803610333023, 'sensitivity': 0.8941223155929038, 'specificity': 0.6407950310559005, 'f1_score': 0.8878842087476551}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.0001_epochs200_edge_percent_to_keep0.1_
+{'accuracy': 0.8150537634408602, 'auroc': 0.8512476352859984, 'sensitivity': 0.8639075630252101, 'specificity': 0.6761573498964804, 'f1_score': 0.8745700113519262}
+--------------------------------

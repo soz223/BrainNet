@@ -187,8 +187,8 @@ class ResidualGNNs(torch.nn.Module):
 
         xs = [x]
         for conv in self.convs:
-            xs += [conv(xs[-1], edge_index).tanh()] # ===================================== controlls if edges are weighted or not =====================================
-            #xs += [conv(xs[-1], edge_index, edge_attr).tanh()] # ===================================== controlls if edges are weighted or not =====================================
+            # xs += [conv(xs[-1], edge_index).tanh()] # ===================================== controlls if edges are weighted or not =====================================
+            xs += [conv(xs[-1], edge_index, edge_attr).tanh()] # ===================================== controlls if edges are weighted or not =====================================
 
         h = []
         upper_tri_indices = torch.triu_indices(x.shape[1], x.shape[1])
