@@ -1037,3 +1037,39 @@ _edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.0001_epochs200_edge_perc
 _edge_dir_prefixEuclidean_Distance_distance_matrix__lr5e-05_epochs200_edge_percent_to_keep0.1_
 {'accuracy': 0.821505376344086, 'auroc': 0.868275754746343, 'sensitivity': 0.8967366946778711, 'specificity': 0.5936231884057971, 'f1_score': 0.8826291450659879}
 --------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr1e-05_epochs200_edge_percent_to_keep0.1_
+{'accuracy': 0.8236559139784946, 'auroc': 0.8432722905587354, 'sensitivity': 0.8992903828197946, 'specificity': 0.5911387163561077, 'f1_score': 0.8839071362681169}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.001_epochs300_edge_percent_to_keep0.1_
+{'accuracy': 0.810752688172043, 'auroc': 0.8514030501089325, 'sensitivity': 0.954579831932773, 'specificity': 0.38004140786749485, 'f1_score': 0.8835302835302835}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.0005_epochs300_edge_percent_to_keep0.1_
+{'accuracy': 0.8301075268817204, 'auroc': 0.8629923814936603, 'sensitivity': 0.9486134453781514, 'specificity': 0.4713540372670807, 'f1_score': 0.8939397801314618}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.0002_epochs300_edge_percent_to_keep0.1_
+{'accuracy': 0.7978494623655914, 'auroc': 0.8519659197012139, 'sensitivity': 0.8693977591036415, 'specificity': 0.5817474120082815, 'f1_score': 0.8653201050318124}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr0.0001_epochs300_edge_percent_to_keep0.1_
+{'accuracy': 0.8193548387096774, 'auroc': 0.8590470507043397, 'sensitivity': 0.881624649859944, 'specificity': 0.618832298136646, 'f1_score': 0.8787327524279626}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__lr5e-05_epochs300_edge_percent_to_keep0.1_
+{'accuracy': 0.7956989247311828, 'auroc': 0.8677883056604283, 'sensitivity': 0.8350513538748832, 'specificity': 0.679287784679089, 'f1_score': 0.8592348687575491}
+--------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2024-8-31 19:47:59
+
+
+

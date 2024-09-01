@@ -103,8 +103,26 @@ def spearman_correlation(data):
 def kendall_correlation(data):
     return data.corr(method='kendall')
 
+import numpy as np
+from sklearn.metrics import mutual_info_score
+from sklearn.feature_selection import mutual_info_regression
+
+
 def mutual_information(data):
-    return data.corr(method='mutual_info')
+    num_rois = data.shape[1]
+    mutual_info_matrix = np.zeros((num_rois, num_rois))
+    
+    for i in range(num_rois):
+        for j in range(num_rois):
+            if i == j:
+                mutual_info_matrix[i, j] = 0  # Mutual information with itself is not needed
+            else:
+                # Estimate mutual information between the two time series
+                mutual_info_matrix[i, j] = mutual_info_regression(data.iloc[:, i].values.reshape(-1, 1), 
+                                                                  data.iloc[:, j].values)[0]
+
+    return mutual_info_matrix
+
 
 def cross_correlation(data):
     num_rois = data.shape[1]
