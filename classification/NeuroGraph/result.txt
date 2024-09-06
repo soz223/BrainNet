@@ -1073,3 +1073,12 @@ _edge_dir_prefixEuclidean_Distance_distance_matrix__lr5e-05_epochs300_edge_perce
 
 
 
+_edge_dir_prefixKNN_Graph_knn_graph__lr0.001_epochs100_edge_percent_to_keep0.1_
+{'accuracy': 0.7096774193548387, 'auroc': 0.7494308853976372, 'sensitivity': 0.7782352941176469, 'specificity': 0.5083561076604555, 'f1_score': 0.7984459238480055}
+--------------------------------
+_edge_dir_prefixKNN_Graph_knn_graph__lr0.001_epochs100_edge_percent_to_keep0.2_
+{'accuracy': 0.7204301075268817, 'auroc': 0.7466736085738643, 'sensitivity': 0.8002847805788982, 'specificity': 0.4782608695652174, 'f1_score': 0.8104330800390095}
+--------------------------------
+_edge_dir_prefixpearson_correlation_pearson_correlation_lr0.0001_epochs100_edge_percent_to_keep0.1_
+{'accuracy': 0.7419354838709677, 'auroc': 0.8259908929755477, 'sensitivity': 0.7533193277310926, 'specificity': 0.7153291925465839, 'f1_score': 0.8095871482998577}
+--------------------------------

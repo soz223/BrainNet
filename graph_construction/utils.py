@@ -10,6 +10,8 @@ import pandas as pd
 from statsmodels.tsa.stattools import grangercausalitytests
 import seaborn as sns
 import matplotlib.pyplot as plt
+# cosine_similarity
+from sklearn.metrics.pairwise import cosine_similarity as cosine_similarity_sklearn
 
 
 # Function to convert a correlation matrix into a graph Data object
@@ -31,7 +33,7 @@ def pearson_correlation(data):
     return np.corrcoef(data, rowvar=False)
 
 def cosine_similarity(data):
-    return cosine_similarity(data.T)
+    return cosine_similarity_sklearn(data.T)
 
 def partial_correlation(data):
     return pg.partial_corr(data, x=0, y=1, covar=2)

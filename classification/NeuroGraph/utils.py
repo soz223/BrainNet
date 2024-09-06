@@ -193,7 +193,6 @@ class ResidualGNNs(torch.nn.Module):
         h = []
         upper_tri_indices = torch.triu_indices(x.shape[1], x.shape[1])
         
-        # 保留所有上三角部分的元素，包括零元素
         for i, xx in enumerate(xs):
             if i == 0:
                 xx = xx.reshape(data.num_graphs, x.shape[1], -1)
