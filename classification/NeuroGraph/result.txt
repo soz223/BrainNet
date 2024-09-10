@@ -1082,3 +1082,6 @@ _edge_dir_prefixKNN_Graph_knn_graph__lr0.001_epochs100_edge_percent_to_keep0.2_
 _edge_dir_prefixpearson_correlation_pearson_correlation_lr0.0001_epochs100_edge_percent_to_keep0.1_
 {'accuracy': 0.7419354838709677, 'auroc': 0.8259908929755477, 'sensitivity': 0.7533193277310926, 'specificity': 0.7153291925465839, 'f1_score': 0.8095871482998577}
 --------------------------------
+_edge_dir_prefixcosine_similarity_cosine_similarity_lr0.0001_epochs100_edge_percent_to_keep0.1_
+{'accuracy': 0.7419354838709677, 'auroc': 0.8259908929755477, 'sensitivity': 0.7533193277310926, 'specificity': 0.7153291925465839, 'f1_score': 0.8095871482998577}
+--------------------------------
