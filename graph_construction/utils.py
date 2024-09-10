@@ -97,13 +97,40 @@ def knn_graph(data, K = 20):
 
     knn_graph = kneighbors_graph(data.T, K, mode='distance', metric='euclidean', include_self=False)
 
-    return knn_graph
+    # knn_graph to adjacency matrix
+
+    knn_graph_adj_matrix = np.zeros((data.shape[1], data.shape[1]))
+
+    for i in range(data.shape[1]):
+        for j in range(data.shape[1]):
+            if i != j:
+                knn_graph_adj_matrix[i, j] = knn_graph[i, j]
+
+    return knn_graph_adj_matrix
 
 def spearman_correlation(data):
-    return data.corr(method='spearman')
+    matrix = data.corr(method='spearman')
+
+    spearman_correlation_matrix = np.zeros((data.shape[1], data.shape[1]))
+
+    for i in range(data.shape[1]):
+        for j in range(data.shape[1]):
+            spearman_correlation_matrix[i, j] = matrix.iloc[i, j]
+
+
+    return spearman_correlation_matrix
 
 def kendall_correlation(data):
-    return data.corr(method='kendall')
+    matrix = data.corr(method='kendall')
+
+    kendall_correlation_matrix = np.zeros((data.shape[1], data.shape[1]))
+
+    for i in range(data.shape[1]):
+        for j in range(data.shape[1]):
+            kendall_correlation_matrix[i, j] = matrix.iloc[i, j]
+
+
+    return kendall_correlation_matrix
 
 import numpy as np
 from sklearn.metrics import mutual_info_score
