@@ -13,6 +13,8 @@ import matplotlib.pyplot as plt
 # cosine_similarity
 from sklearn.metrics.pairwise import cosine_similarity as cosine_similarity_sklearn
 from sklearn.neighbors import NearestNeighbors
+from scipy.spatial.distance import cdist
+from lingam import DirectLiNGAM
 
 
 
@@ -425,6 +427,39 @@ def patels_conditional_dependence_measures_tau(data, threshold=0.5):
 
     return tau_matrix
 
+
+
+def lingam(data):
+    """
+    Perform LiNGAM causal analysis on the given data.
+
+    Parameters:
+    data (numpy.ndarray or pandas.DataFrame): Input data with shape (samples, variables).
+                                              Each column represents a different variable.
+
+    Returns:
+    tuple: (causal_matrix, causal_order)
+           - causal_matrix: The estimated causal influence matrix.
+           - causal_order: The estimated causal ordering of the variables.
+    """
+    if isinstance(data, pd.DataFrame):
+        data = data.values
+    
+    # Ensure that data is 2D
+    if len(data.shape) != 2:
+        raise ValueError(f"Expected 2D input data, got shape {data.shape}")
+    
+    print("Performing LiNGAM causal analysis...")
+    
+    # Create a DirectLiNGAM model and fit the data
+    model = DirectLiNGAM()
+    model.fit(data)
+    
+    # Get the causal matrix and causal order
+    causal_matrix = model.adjacency_matrix_
+    causal_order = model.causal_order_
+    
+    return causal_matrix
 
 def plot_correlation_matrix(correlation_matrix, method=""):
     plt.figure(figsize=(10, 10))
