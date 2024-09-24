@@ -12,6 +12,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 # cosine_similarity
 from sklearn.metrics.pairwise import cosine_similarity as cosine_similarity_sklearn
+from sklearn.neighbors import NearestNeighbors
+
 
 
 # Function to convert a correlation matrix into a graph Data object
@@ -174,6 +176,254 @@ def granger_causality(data, max_lag=1):
                 granger_matrix[i, j] = np.min(p_values)
     
     return granger_matrix
+
+
+
+import numpy as np
+from scipy.signal import coherence
+
+def coherence_matrix(data, fs=1.0, nperseg=None):
+    """
+    Calculate the coherence matrix for a set of time series data.
+
+    Parameters:
+    data (numpy.ndarray or pandas.DataFrame): A 2D array where rows are time points and columns are different ROI time series.
+    fs (float, optional): The sampling frequency of the data. Default is 1.0.
+    nperseg (int, optional): Length of each segment for calculating coherence. Default is None, which uses scipy's default.
+
+    Returns:
+    numpy.ndarray: A symmetric matrix of coherence values.
+    """
+    # Convert DataFrame to numpy array if necessary
+    if isinstance(data, pd.DataFrame):
+        data = data.values
+
+    n = data.shape[1]  # Number of ROIs
+    coherence_matrix = np.zeros((n, n))  # Initialize an empty coherence matrix
+
+    nperseg = nperseg or data.shape[0] // 4  # Default to 25% of the data length
+
+    for i in range(n):
+        for j in range(i, n):
+            # Compute coherence between ROI i and ROI j
+            f, Cxy = coherence(data[:, i], data[:, j], fs=fs, nperseg=nperseg)
+            coherence_matrix[i, j] = np.mean(Cxy)  # Average coherence over all frequencies
+            coherence_matrix[j, i] = coherence_matrix[i, j]  # Symmetric matrix
+
+    return coherence_matrix
+
+
+
+import numpy as np
+from sklearn.neighbors import NearestNeighbors
+from scipy.spatial.distance import cdist
+
+def time_delay_embedding(time_series, embedding_dim, time_delay):
+    """
+    Perform time-delay embedding for a given time series.
+
+    Parameters:
+    time_series (numpy.ndarray): The input time series to be embedded.
+    embedding_dim (int): The embedding dimension.
+    time_delay (int): The time delay.
+
+    Returns:
+    numpy.ndarray: The embedded time series in a higher dimensional space.
+    """
+    N = len(time_series)
+    if embedding_dim * time_delay > N:
+        raise ValueError(f"Time series too short for the desired embedding parameters. "
+                         f"Series length: {N}, required length: {embedding_dim * time_delay}")
+    
+    # Generate the embedded matrix ensuring each element has the same length
+    embedded = []
+    for i in range(embedding_dim):
+        start_idx = i * time_delay
+        end_idx = N - (embedding_dim - 1) * time_delay
+        embedded.append(time_series[start_idx:start_idx + end_idx])
+    
+    embedded = np.array(embedded).T  # Convert list of arrays to 2D numpy array and transpose
+    return embedded
+
+def generalised_synchronisation_matrix(data, embedding_dim=10, time_delay=1):
+    """
+    Calculate the generalised synchronisation matrix for a set of time series data.
+
+    Parameters:
+    data (pandas.DataFrame or numpy.ndarray): A 2D array where rows are time points and columns are different ROI time series.
+    embedding_dim (int, optional): The embedding dimension for time-delay embedding. Default is 10.
+    time_delay (int, optional): The time delay for time-delay embedding. Default is 1.
+
+    Returns:
+    numpy.ndarray: A symmetric matrix of generalised synchronisation values.
+    """
+    # If data is a pandas DataFrame, convert it to a numpy array
+    if isinstance(data, pd.DataFrame):
+        data = data.values
+
+    n = data.shape[1]  # Number of ROIs (time series)
+    gs_matrix = np.zeros((n, n))  # Initialize an empty matrix for generalised synchronisation values
+
+    for i in range(n):
+        for j in range(i, n):
+            # Get the two time series to compare
+            time_series_1 = data[:, i]
+            time_series_2 = data[:, j]
+            
+            # Check if time series are long enough for the embedding
+            if len(time_series_1) < embedding_dim * time_delay or len(time_series_2) < embedding_dim * time_delay:
+                print(f"Skipping pair ({i}, {j}) due to insufficient length for embedding.")
+                continue
+            
+            # Perform time-delay embedding for each time series
+            try:
+                embedded_1 = time_delay_embedding(time_series_1, embedding_dim, time_delay)
+                embedded_2 = time_delay_embedding(time_series_2, embedding_dim, time_delay)
+            except ValueError as e:
+                print(f"Skipping pair ({i}, {j}) due to embedding error: {e}")
+                continue
+            
+            # Compute the distance matrix for each embedded time series
+            dist_1 = cdist(embedded_1, embedded_1)
+            dist_2 = cdist(embedded_2, embedded_2)
+            
+            # Find the nearest neighbors in the first embedded space
+            nn_1 = NearestNeighbors(n_neighbors=2).fit(dist_1).kneighbors(dist_1, return_distance=False)[:, 1]
+            
+            # Calculate the synchronisation sum
+            synchronisation_sum = 0
+            for k in range(len(embedded_1)):
+                l = nn_1[k]
+                synchronisation_sum += dist_2[k, l]
+            
+            # Calculate the average synchronisation distance
+            gs_value = synchronisation_sum / len(embedded_1)
+            
+            gs_matrix[i, j] = gs_value
+            gs_matrix[j, i] = gs_value  # Symmetric matrix
+
+    return gs_matrix
+
+
+import numpy as np
+import pandas as pd
+
+def binarize_data(data, threshold=0.5):
+    """
+    Binarize the input data based on a threshold.
+
+    Parameters:
+    data (numpy.ndarray): Input data with shape (time_points, ROIs).
+    threshold (float): Threshold for binarization.
+
+    Returns:
+    numpy.ndarray: Binarized data.
+    """
+    return (data > threshold).astype(int)
+
+def calculate_conditional_probabilities(data):
+    """
+    Calculate the conditional probabilities for each pair of variables.
+
+    Parameters:
+    data (numpy.ndarray): Binarized data with shape (time_points, ROIs).
+
+    Returns:
+    tuple: (P(X), P(Y), P(X|Y), P(Y|X), P(X,Y))
+    """
+    n = data.shape[1]
+    P_X = np.mean(data, axis=0)  # P(X) for each ROI
+    P_Y = P_X.copy()  # P(Y) is the same as P(X) for each ROI
+
+    P_X_given_Y = np.zeros((n, n))
+    P_Y_given_X = np.zeros((n, n))
+    P_XY = np.zeros((n, n))
+
+    for i in range(n):
+        for j in range(n):
+            if i == j:
+                P_X_given_Y[i, j] = 1.0
+                P_Y_given_X[i, j] = 1.0
+                P_XY[i, j] = P_X[i]
+            else:
+                # Calculate joint probability P(X,Y)
+                P_XY[i, j] = np.mean((data[:, i] == 1) & (data[:, j] == 1))
+                # Calculate P(X|Y) = P(X,Y) / P(Y)
+                if P_Y[j] != 0:
+                    P_X_given_Y[i, j] = P_XY[i, j] / P_Y[j]
+                # Calculate P(Y|X) = P(X,Y) / P(X)
+                if P_X[i] != 0:
+                    P_Y_given_X[i, j] = P_XY[i, j] / P_X[i]
+
+    return P_X, P_Y, P_X_given_Y, P_Y_given_X, P_XY
+
+def patels_conditional_dependence_measures_kappa(data, threshold=0.5):
+    """
+    Calculate the kappa (κ) matrix of Patel's Conditional Dependence Measures for the input data.
+
+    Parameters:
+    data (numpy.ndarray or pandas.DataFrame): Input data with shape (time_points, ROIs).
+    threshold (float, optional): Threshold for binarization. Default is 0.5.
+
+    Returns:
+    numpy.ndarray: Kappa matrix with diagonal elements set to 1.
+    """
+    if isinstance(data, pd.DataFrame):
+        data = data.values
+
+    # Step 1: Binarize the data
+    binarized_data = binarize_data(data, threshold=threshold)
+
+    # Step 2: Calculate conditional probabilities
+    P_X, P_Y, P_X_given_Y, _, _ = calculate_conditional_probabilities(binarized_data)
+
+    n = data.shape[1]
+    kappa_matrix = np.zeros((n, n))
+
+    # Step 3: Calculate kappa (κ) matrix
+    for i in range(n):
+        for j in range(n):
+            if i == j:
+                kappa_matrix[i, j] = 1.0  # Set diagonal elements to 1
+            else:
+                # κ = P(X|Y) - P(X)
+                kappa_matrix[i, j] = P_X_given_Y[i, j] - P_X[i]
+
+    return kappa_matrix
+
+def patels_conditional_dependence_measures_tau(data, threshold=0.5):
+    """
+    Calculate the tau (τ) matrix of Patel's Conditional Dependence Measures for the input data.
+
+    Parameters:
+    data (numpy.ndarray or pandas.DataFrame): Input data with shape (time_points, ROIs).
+    threshold (float, optional): Threshold for binarization. Default is 0.5.
+
+    Returns:
+    numpy.ndarray: Tau matrix with diagonal elements set to 1.
+    """
+    if isinstance(data, pd.DataFrame):
+        data = data.values
+
+    # Step 1: Binarize the data
+    binarized_data = binarize_data(data, threshold=threshold)
+
+    # Step 2: Calculate conditional probabilities
+    _, _, P_X_given_Y, P_Y_given_X, _ = calculate_conditional_probabilities(binarized_data)
+
+    n = data.shape[1]
+    tau_matrix = np.zeros((n, n))
+
+    # Step 3: Calculate tau (τ) matrix
+    for i in range(n):
+        for j in range(n):
+            if i == j:
+                tau_matrix[i, j] = 1.0  # Set diagonal elements to 1
+            else:
+                # τ = P(X|Y) - P(Y|X)
+                tau_matrix[i, j] = P_X_given_Y[i, j] - P_Y_given_X[i, j]
+
+    return tau_matrix
 
 
 def plot_correlation_matrix(correlation_matrix, method=""):
