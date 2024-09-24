@@ -45,18 +45,18 @@ process_files() {
 }
 
 # # Call the function for the first case
-# process_files "/home/songlinzhao/task-driven-parcellation/baseline/data/ADNI/fmri_edge/associated_high_order_fc_dynamic/" "associated_high_order_fc_dynamic" 1 1305
+# process_files "/data/soz223/BrainNet/data/ADNI/fmri_edge/associated_high_order_fc_dynamic/" "associated_high_order_fc_dynamic" 1 1305
 
 # # Call the function for the second case
-# process_files "/home/songlinzhao/task-driven-parcellation/baseline/data/ADNI/fmri_edge/correlations_correlation_dynamic/" "correlations_correlation_dynamic" 1 1305
+# process_files "/data/soz223/BrainNet/data/ADNI/fmri_edge/correlations_correlation_dynamic/" "correlations_correlation_dynamic" 1 1305
 
 # # Call the function for the third case
-# process_files "/home/songlinzhao/task-driven-parcellation/baseline/data/ADNI/fmri_edge/euclidean_distance_dynamic/" "euclidean_distance_dynamic" 1 726
+# process_files "/data/soz223/BrainNet/data/ADNI/fmri_edge/euclidean_distance_dynamic/" "euclidean_distance_dynamic" 1 726
 
-# process_files "/home/songlinzhao/task-driven-parcellation/baseline/data/ADNI/fmri_edge/spearman_correlation_dynamic/" "spearman_correlation_dynamic" 1 1305
+# process_files "/data/soz223/BrainNet/data/ADNI/fmri_edge/spearman_correlation_dynamic/" "spearman_correlation_dynamic" 1 1305
 
-# process_files "/home/songlinzhao/task-driven-parcellation/baseline/data/ADNI/fmri_edge/knn_graph_dynamic/" "knn_graph_dynamic" 1 1305
+# process_files "/data/soz223/BrainNet/data/ADNI/fmri_edge/knn_graph_dynamic/" "knn_graph_dynamic" 1 1305
 
-process_files "/home/songlinzhao/task-driven-parcellation/baseline/data/ADNI/fmri_edge/kendall_correlation_dynamic/" "kendall_correlation_dynamic" 371 1305
+# process_files "/data/soz223/BrainNet/data/ADNI/fmri_edge/kendall_correlation_dynamic/" "kendall_correlation_dynamic" 371 1305
 
-process_files "/home/songlinzhao/task-driven-parcellation/baseline/data/ADNI/fmri_edge/mutual_information_dynamic/" "mutual_information_dynamic" 1 111
+# process_files "/data/soz223/BrainNet/data/ADNI/fmri_edge/mutual_information_dynamic/" "mutual_information_dynamic" 1 111
