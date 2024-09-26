@@ -1091,3 +1091,21 @@ _edge_dir_prefixcosine_similarity_cosine_similarity_lr0.0001_epochs100_edge_perc
 _edge_dir_prefixcosine_similarity_cosine_similarity_lr0.0001_epochs100_edge_percent_to_keep0.1_
 {'accuracy': 0.7419354838709677, 'auroc': 0.8259908929755477, 'sensitivity': 0.7533193277310926, 'specificity': 0.7153291925465839, 'f1_score': 0.8095871482998577}
 --------------------------------
+_edge_dir_prefixpearson_correlation_pearson_correlation_batch_size16_num_layers2_lr0.001_epochs100_edge_percent_to_keep0.05_
+{'accuracy': 0.7849462365591398, 'auroc': 0.8271253196930946, 'sensitivity': 0.8545098039215686, 'specificity': 0.5808033126293995, 'f1_score': 0.8564408551664531}
+--------------------------------
+_edge_dir_prefixcosine_similarity_cosine_similarity_batch_size16_num_layers2_lr0.001_epochs100_edge_percent_to_keep0.05_
+{'accuracy': 0.7956989247311828, 'auroc': 0.8267554635380723, 'sensitivity': 0.8791830065359477, 'specificity': 0.541184265010352, 'f1_score': 0.8656434689087865}
+--------------------------------
+_edge_dir_prefixpearson_correlation_pearson_correlation_batch_size16_num_layers2_lr0.001_epochs2_edge_percent_to_keep0.05_
+{'accuracy': 0.7806451612903226, 'auroc': 0.7662460249800404, 'sensitivity': 0.9308823529411765, 'specificity': 0.31554451345755696, 'f1_score': 0.8641675271062719}
+--------------------------------
+_edge_dir_prefixcosine_similarity_cosine_similarity_batch_size16_num_layers2_lr0.001_epochs2_edge_percent_to_keep0.05_
+{'accuracy': 0.756989247311828, 'auroc': 0.7683520886615517, 'sensitivity': 0.8862931839402428, 'specificity': 0.36968944099378886, 'f1_score': 0.8449534072165825}
+--------------------------------
+_edge_dir_prefixKNN_Graph_knn_graph__batch_size16_num_layers2_lr0.001_epochs2_edge_percent_to_keep0.05_
+{'accuracy': 0.735483870967742, 'auroc': 0.6666751647518911, 'sensitivity': 0.9361111111111111, 'specificity': 0.14133333333333337, 'f1_score': 0.8402474068376163}
+--------------------------------
+_edge_dir_prefixEuclidean_Distance_distance_matrix__batch_size16_num_layers2_lr0.001_epochs2_edge_percent_to_keep0.05_
+{'accuracy': 0.7505376344086022, 'auroc': 0.6969909200395132, 'sensitivity': 0.9410130718954249, 'specificity': 0.1850766045548654, 'f1_score': 0.8498372080002283}
+--------------------------------
