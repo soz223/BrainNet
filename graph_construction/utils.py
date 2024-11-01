@@ -40,7 +40,32 @@ def cosine_similarity(data):
     return cosine_similarity_sklearn(data.T)
 
 def partial_correlation(data):
-    return pg.partial_corr(data, x=0, y=1, covar=2)
+    # Get the number of ROIs (columns)
+    num_rois = data.shape[1]
+    
+    # Initialize an empty DataFrame to store partial correlation results
+    results = pd.DataFrame(index=range(num_rois), columns=range(num_rois))
+    
+    # Iterate over each pair of ROIs
+    for i in range(num_rois):
+        for j in range(num_rois):
+            if i != j:
+                # Define covariates as all ROIs except the current pair (i, j)
+                covars = [k for k in range(num_rois) if k != i and k != j]
+                
+                # Calculate the partial correlation between ROI i and ROI j
+                partial_corr_result = pg.partial_corr(data, x=i, y=j, covar=covars)
+                
+                # Store the partial correlation coefficient in the results DataFrame
+                results.loc[i, j] = partial_corr_result['r'].values[0]
+            else:
+                # Fill diagonal with NaN or 1.0 as self-correlation is not relevant
+                results.loc[i, j] = 1.0
+    
+    # Convert results DataFrame to float type
+    results = results.astype(float)
+    
+    return results
 
 def correlations_correlation(data):
     pearson_correlation_matrix = np.corrcoef(data, rowvar=False)
