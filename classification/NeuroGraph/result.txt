@@ -6441,3 +6441,12 @@ _edge_dir_prefixPSI_PSI_matrix__epochs100_edge_percent_to_keep0.2_
 _edge_dir_prefixPLV_MatrixAverage__epochs100_edge_percent_to_keep0.05_
 {'accuracy': 0.6623655913978495, 'auroc': 0.5743133195307107, 'sensitivity': 0.7979038281979458, 'specificity': 0.2525051759834368, 'f1_score': 0.7803688640858188}
 --------------------------------
+_edge_dir_prefixmulti_region_SLR_SLR_epochs20_edge_percent_to_keep0.05_
+{'accuracy': 0.6903225806451612, 'auroc': 0.6704814950134643, 'sensitivity': 0.7746218487394959, 'specificity': 0.4383933747412009, 'f1_score': 0.7892210428550468}
+--------------------------------
+_edge_dir_prefixmulti_region_SR_SR_epochs20_edge_percent_to_keep0.05_
+{'accuracy': 0.7526881720430108, 'auroc': 0.5667201450628561, 'sensitivity': 1.0, 'specificity': 0.0, 'f1_score': 0.8587582489529677}
+--------------------------------
+_edge_dir_prefixsparse_inverse_covariance_sparse_inverse_covariance_epochs20_edge_percent_to_keep0.05_
+{'accuracy': 0.7309523809523809, 'auroc': 0.7846537093748613, 'sensitivity': 0.7734959548304589, 'specificity': 0.5786672563762347, 'f1_score': 0.8144860379006721}
+--------------------------------
