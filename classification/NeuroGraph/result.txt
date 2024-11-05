@@ -6435,3 +6435,9 @@ _edge_dir_prefixpatels_conditional_dependence_measures_kappa_patels_conditional_
 _edge_dir_prefixpatels_conditional_dependence_measures_tau_patels_conditional_dependence_measures_tau_epochs200_edge_percent_to_keep0.2_
 {'accuracy': 0.7010752688172044, 'auroc': 0.6757140150746289, 'sensitivity': 0.7967740429505137, 'specificity': 0.40511801242236023, 'f1_score': 0.8000534216730832}
 --------------------------------
+_edge_dir_prefixPSI_PSI_matrix__epochs100_edge_percent_to_keep0.2_
+{'accuracy': 0.4795698924731183, 'auroc': 0.4229254252425608, 'sensitivity': 0.5331605975723622, 'specificity': 0.3299544513457557, 'f1_score': 0.5959228607123936}
+--------------------------------
+_edge_dir_prefixPLV_MatrixAverage__epochs100_edge_percent_to_keep0.05_
+{'accuracy': 0.6623655913978495, 'auroc': 0.5743133195307107, 'sensitivity': 0.7979038281979458, 'specificity': 0.2525051759834368, 'f1_score': 0.7803688640858188}
+--------------------------------
