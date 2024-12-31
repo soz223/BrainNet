@@ -1,0 +1,195 @@
+_edge_dir_prefixpearson_correlation_pearson_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6181818181818182, 'auroc': 0.538514329429977, 'sensitivity': 0.7166012378426171, 'specificity': 0.4258198152385795, 'f1_score': 0.7052046466059394}
+--------------------------------
+_edge_dir_prefixcosine_similarity_cosine_similarity_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6051948051948052, 'auroc': 0.5536672788212281, 'sensitivity': 0.6771881324295117, 'specificity': 0.4490583947792185, 'f1_score': 0.6977749402148127}
+--------------------------------
+_edge_dir_prefixpearson_correlation_pearson_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6181818181818182, 'auroc': 0.538514329429977, 'sensitivity': 0.7166012378426171, 'specificity': 0.4258198152385795, 'f1_score': 0.7052046466059394}
+--------------------------------
+_edge_dir_prefixcosine_similarity_cosine_similarity_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6051948051948052, 'auroc': 0.5536672788212281, 'sensitivity': 0.6771881324295117, 'specificity': 0.4490583947792185, 'f1_score': 0.6977749402148127}
+--------------------------------
+_edge_dir_prefixknn_graph_knn_graph_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.561038961038961, 'auroc': 0.5213163117046964, 'sensitivity': 0.6328234600648394, 'specificity': 0.4117196372573947, 'f1_score': 0.647160747748983}
+--------------------------------
+_edge_dir_prefixeuclidean_distance_euclidean_distance_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.49090909090909085, 'auroc': 0.4777725132035872, 'sensitivity': 0.5190435209745554, 'specificity': 0.442680227137893, 'f1_score': 0.5814716843873853}
+--------------------------------
+_edge_dir_prefixspearman_correlation_spearman_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.5974025974025974, 'auroc': 0.5524504396474728, 'sensitivity': 0.7044988702230082, 'specificity': 0.36459835579286376, 'f1_score': 0.705670806251206}
+--------------------------------
+_edge_dir_prefixkendall_correlation_kendall_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6, 'auroc': 0.5344154319601332, 'sensitivity': 0.68470144414972, 'specificity': 0.39299872870582253, 'f1_score': 0.6715807068240408}
+--------------------------------
+_edge_dir_prefixpartial_correlation_partial_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.48311688311688317, 'auroc': 0.5335094575968876, 'sensitivity': 0.5115930837999805, 'specificity': 0.4741330621239088, 'f1_score': 0.5132582281765585}
+--------------------------------
+_edge_dir_prefixcross_correlation_cross_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6051948051948053, 'auroc': 0.5605688433336188, 'sensitivity': 0.6821129776991846, 'specificity': 0.40812001017035343, 'f1_score': 0.6867610353198674}
+--------------------------------
+_edge_dir_prefixcorrelations_correlation_correlations_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.5298701298701298, 'auroc': 0.4981330432399635, 'sensitivity': 0.6047110718145201, 'specificity': 0.39108738028646495, 'f1_score': 0.6245707456006511}
+--------------------------------
+_edge_dir_prefixassociated_high_order_fc_associated_high_order_fc_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.49350649350649345, 'auroc': 0.5447420077635495, 'sensitivity': 0.4711044306906376, 'specificity': 0.5501869649970337, 'f1_score': 0.5348761831903487}
+--------------------------------
+_edge_dir_prefixmutual_information_mutual_information_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6207792207792208, 'auroc': 0.5436770526117958, 'sensitivity': 0.7381705472050301, 'specificity': 0.36346063225697095, 'f1_score': 0.7195470434497707}
+--------------------------------
+_edge_dir_prefixpearson_correlation_pearson_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6181818181818182, 'auroc': 0.538514329429977, 'sensitivity': 0.7166012378426171, 'specificity': 0.4258198152385795, 'f1_score': 0.7052046466059394}
+--------------------------------
+_edge_dir_prefixcosine_similarity_cosine_similarity_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6051948051948052, 'auroc': 0.5536672788212281, 'sensitivity': 0.6771881324295117, 'specificity': 0.4490583947792185, 'f1_score': 0.6977749402148127}
+--------------------------------
+_edge_dir_prefixknn_graph_knn_graph_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.561038961038961, 'auroc': 0.5213163117046964, 'sensitivity': 0.6328234600648394, 'specificity': 0.4117196372573947, 'f1_score': 0.647160747748983}
+--------------------------------
+_edge_dir_prefixeuclidean_distance_euclidean_distance_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.49090909090909085, 'auroc': 0.4777725132035872, 'sensitivity': 0.5190435209745554, 'specificity': 0.442680227137893, 'f1_score': 0.5814716843873853}
+--------------------------------
+_edge_dir_prefixspearman_correlation_spearman_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.5974025974025974, 'auroc': 0.5524504396474728, 'sensitivity': 0.7044988702230082, 'specificity': 0.36459835579286376, 'f1_score': 0.705670806251206}
+--------------------------------
+_edge_dir_prefixkendall_correlation_kendall_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6, 'auroc': 0.5344154319601332, 'sensitivity': 0.68470144414972, 'specificity': 0.39299872870582253, 'f1_score': 0.6715807068240408}
+--------------------------------
+_edge_dir_prefixpartial_correlation_partial_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.48311688311688317, 'auroc': 0.5335094575968876, 'sensitivity': 0.5115930837999805, 'specificity': 0.4741330621239088, 'f1_score': 0.5132582281765585}
+--------------------------------
+_edge_dir_prefixcross_correlation_cross_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6051948051948053, 'auroc': 0.5605688433336188, 'sensitivity': 0.6821129776991846, 'specificity': 0.40812001017035343, 'f1_score': 0.6867610353198674}
+--------------------------------
+_edge_dir_prefixcorrelations_correlation_correlations_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.5298701298701298, 'auroc': 0.4981330432399635, 'sensitivity': 0.6047110718145201, 'specificity': 0.39108738028646495, 'f1_score': 0.6245707456006511}
+--------------------------------
+_edge_dir_prefixassociated_high_order_fc_associated_high_order_fc_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.49350649350649345, 'auroc': 0.5447420077635495, 'sensitivity': 0.4711044306906376, 'specificity': 0.5501869649970337, 'f1_score': 0.5348761831903487}
+--------------------------------
+_edge_dir_prefixmutual_information_mutual_information_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6207792207792208, 'auroc': 0.5436770526117958, 'sensitivity': 0.7381705472050301, 'specificity': 0.36346063225697095, 'f1_score': 0.7195470434497707}
+--------------------------------
+_edge_dir_prefixpatels_conditional_dependence_measures_kappa_patels_conditional_dependence_measures_kappa_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.5740259740259741, 'auroc': 0.4994719693684422, 'sensitivity': 0.6712256606739365, 'specificity': 0.35419950843291803, 'f1_score': 0.6704499605039483}
+--------------------------------
+_edge_dir_prefixpatels_conditional_dependence_measures_tau_patels_conditional_dependence_measures_tau_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.5818181818181818, 'auroc': 0.5273426080482027, 'sensitivity': 0.6932447195205815, 'specificity': 0.3320803457920163, 'f1_score': 0.6823084359366985}
+--------------------------------
+_edge_dir_prefixpearson_correlation_pearson_correlation_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6155844155844156, 'auroc': 0.5450363234936738, 'sensitivity': 0.7585344336378819, 'specificity': 0.28598016781083146, 'f1_score': 0.7273167193167194}
+--------------------------------
+_edge_dir_prefixcosine_similarity_cosine_similarity_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6181818181818182, 'auroc': 0.5470567797522741, 'sensitivity': 0.7470338933097554, 'specificity': 0.3173875752182388, 'f1_score': 0.7275454642238417}
+--------------------------------
+_edge_dir_prefixknn_graph_knn_graph_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.5922077922077922, 'auroc': 0.49277088244002154, 'sensitivity': 0.7690659200314371, 'specificity': 0.20202796847190435, 'f1_score': 0.7219832482440369}
+--------------------------------
+_edge_dir_prefixeuclidean_distance_euclidean_distance_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.5428571428571429, 'auroc': 0.45990419320254394, 'sensitivity': 0.673418017486983, 'specificity': 0.2682335791168743, 'f1_score': 0.6667661078793208}
+--------------------------------
+_edge_dir_prefixspearman_correlation_spearman_correlation_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.612987012987013, 'auroc': 0.5061444491429499, 'sensitivity': 0.774741330189606, 'specificity': 0.2421656072548521, 'f1_score': 0.7308749892262953}
+--------------------------------
+_edge_dir_prefixkendall_correlation_kendall_correlation_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6285714285714286, 'auroc': 0.5254483716306488, 'sensitivity': 0.7883654582964927, 'specificity': 0.26074209678786336, 'f1_score': 0.7419009308311634}
+--------------------------------
+_edge_dir_prefixpartial_correlation_partial_correlation_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6103896103896103, 'auroc': 0.5128887800813943, 'sensitivity': 0.7913881520778073, 'specificity': 0.19419272819730485, 'f1_score': 0.7326301648932209}
+--------------------------------
+_edge_dir_prefixcross_correlation_cross_correlation_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.5636363636363636, 'auroc': 0.5215677264831372, 'sensitivity': 0.6834193928676687, 'specificity': 0.2846919230443258, 'f1_score': 0.6771125174702088}
+--------------------------------
+_edge_dir_prefixcorrelations_correlation_correlations_correlation_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6181818181818182, 'auroc': 0.5433919455027321, 'sensitivity': 0.7606226544847234, 'specificity': 0.288016950589033, 'f1_score': 0.7317387892958266}
+--------------------------------
+_edge_dir_prefixassociated_high_order_fc_associated_high_order_fc_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6103896103896104, 'auroc': 0.5413780127480119, 'sensitivity': 0.74363965026034, 'specificity': 0.31321773031612843, 'f1_score': 0.7247104143330558}
+--------------------------------
+_edge_dir_prefixmutual_information_mutual_information_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6441558441558441, 'auroc': 0.5700481135950244, 'sensitivity': 0.812149720011789, 'specificity': 0.26275582676498005, 'f1_score': 0.7580494227134544}
+--------------------------------
+_edge_dir_prefixpatels_conditional_dependence_measures_kappa_patels_conditional_dependence_measures_kappa_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6181818181818182, 'auroc': 0.5301418321428579, 'sensitivity': 0.7770452893211515, 'specificity': 0.2550121196711586, 'f1_score': 0.7339872985038884}
+--------------------------------
+_edge_dir_prefixpatels_conditional_dependence_measures_tau_patels_conditional_dependence_measures_tau_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.5896103896103896, 'auroc': 0.5544777417858773, 'sensitivity': 0.6964200805580116, 'specificity': 0.3553575726756505, 'f1_score': 0.7004425204425205}
+--------------------------------
+_edge_dir_prefixpearson_correlation_pearson_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6285714285714287, 'auroc': 0.6415017277685944, 'sensitivity': 0.6841312506140091, 'specificity': 0.5182113738452412, 'f1_score': 0.7119737919124363}
+--------------------------------
+_edge_dir_prefixcosine_similarity_cosine_similarity_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6493506493506495, 'auroc': 0.6571909821067873, 'sensitivity': 0.7167389723941449, 'specificity': 0.5222293414696161, 'f1_score': 0.7320461020461021}
+--------------------------------
+_edge_dir_prefixknn_graph_knn_graph_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.5662337662337662, 'auroc': 0.7035078758416564, 'sensitivity': 0.4704082915807054, 'specificity': 0.7895482668022714, 'f1_score': 0.5970778818248389}
+--------------------------------
+_edge_dir_prefixeuclidean_distance_euclidean_distance_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6857142857142857, 'auroc': 0.6427027840106038, 'sensitivity': 0.863580901856764, 'specificity': 0.27929824561403505, 'f1_score': 0.789208206646006}
+--------------------------------
+_edge_dir_prefixspearman_correlation_spearman_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6207792207792207, 'auroc': 0.6667876848800072, 'sensitivity': 0.6373115237253169, 'specificity': 0.599025680142385, 'f1_score': 0.6963521123441956}
+--------------------------------
+_edge_dir_prefixkendall_correlation_kendall_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.7142857142857143, 'auroc': 0.7197135377430494, 'sensitivity': 0.7871934374692996, 'specificity': 0.546343927451479, 'f1_score': 0.7870867133852706}
+--------------------------------
+_edge_dir_prefixpartial_correlation_partial_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.574025974025974, 'auroc': 0.6349258245371242, 'sensitivity': 0.6337844581982512, 'specificity': 0.49112907873548606, 'f1_score': 0.6098353305751066}
+--------------------------------
+_edge_dir_prefixcross_correlation_cross_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6103896103896104, 'auroc': 0.6438227557386399, 'sensitivity': 0.6547969348659004, 'specificity': 0.5072070514450376, 'f1_score': 0.6939987380774771}
+--------------------------------
+_edge_dir_prefixcorrelations_correlation_correlations_correlation_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.5818181818181818, 'auroc': 0.6202526204284272, 'sensitivity': 0.58989566755084, 'specificity': 0.5668541401813713, 'f1_score': 0.6613362193362194}
+--------------------------------
+_edge_dir_prefixassociated_high_order_fc_associated_high_order_fc_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.587012987012987, 'auroc': 0.5405639694772496, 'sensitivity': 0.6877125454366834, 'specificity': 0.36542147639630473, 'f1_score': 0.6930211399061775}
+--------------------------------
+_edge_dir_prefixmutual_information_mutual_information_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.67012987012987, 'auroc': 0.6929814665316915, 'sensitivity': 0.7495076137145104, 'specificity': 0.503599966098822, 'f1_score': 0.7555907532072454}
+--------------------------------
+_edge_dir_prefixpatels_conditional_dependence_measures_kappa_patels_conditional_dependence_measures_kappa_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6233766233766234, 'auroc': 0.65138394815188, 'sensitivity': 0.6713698791629825, 'specificity': 0.5194969065175015, 'f1_score': 0.700237908247617}
+--------------------------------
+_edge_dir_prefixpatels_conditional_dependence_measures_tau_patels_conditional_dependence_measures_tau_epochs20_edge_percent_to_keep0.2_
+{'accuracy': 0.6337662337662338, 'auroc': 0.589849034547054, 'sensitivity': 0.7595844385499558, 'specificity': 0.3507971862022205, 'f1_score': 0.7396381149285338}
+--------------------------------
+_edge_dir_prefixpearson_correlation_pearson_correlation_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6233766233766234, 'auroc': 0.5791699809114786, 'sensitivity': 0.7242025739267118, 'specificity': 0.40712195948809216, 'f1_score': 0.7254258798572499}
+--------------------------------
+_edge_dir_prefixcosine_similarity_cosine_similarity_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6259740259740261, 'auroc': 0.586927415734328, 'sensitivity': 0.7206983004224383, 'specificity': 0.4236114924993643, 'f1_score': 0.7255639593894039}
+--------------------------------
+_edge_dir_prefixknn_graph_knn_graph_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6519480519480519, 'auroc': 0.6720309662982275, 'sensitivity': 0.7345360055015228, 'specificity': 0.47632782439189764, 'f1_score': 0.7437615146991157}
+--------------------------------
+_edge_dir_prefixeuclidean_distance_euclidean_distance_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6415584415584416, 'auroc': 0.6586562202479507, 'sensitivity': 0.6812826407309166, 'specificity': 0.5381723874904653, 'f1_score': 0.7193213363189057}
+--------------------------------
+_edge_dir_prefixspearman_correlation_spearman_correlation_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6831168831168831, 'auroc': 0.6697387352207838, 'sensitivity': 0.7901324295117398, 'specificity': 0.443101279769472, 'f1_score': 0.7745784137409754}
+--------------------------------
+_edge_dir_prefixkendall_correlation_kendall_correlation_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6831168831168831, 'auroc': 0.6796045148815606, 'sensitivity': 0.7896443658512624, 'specificity': 0.4475586066615815, 'f1_score': 0.7757794196353874}
+--------------------------------
+_edge_dir_prefixpartial_correlation_partial_correlation_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6285714285714286, 'auroc': 0.5498711069566431, 'sensitivity': 0.7898542096473131, 'specificity': 0.26826815831850154, 'f1_score': 0.7444159544159545}
+--------------------------------
+_edge_dir_prefixcross_correlation_cross_correlation_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.612987012987013, 'auroc': 0.5909804629848818, 'sensitivity': 0.7392757638274879, 'specificity': 0.34652428171878974, 'f1_score': 0.7241425849175597}
+--------------------------------
+_edge_dir_prefixcorrelations_correlation_correlations_correlation_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.631168831168831, 'auroc': 0.6034899271012268, 'sensitivity': 0.7266195107574418, 'specificity': 0.426291041613696, 'f1_score': 0.7313862888109652}
+--------------------------------
+_edge_dir_prefixassociated_high_order_fc_associated_high_order_fc_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.5948051948051948, 'auroc': 0.5388467421709748, 'sensitivity': 0.7127476176441693, 'specificity': 0.34093194338503263, 'f1_score': 0.7074065501788274}
+--------------------------------
+_edge_dir_prefixmutual_information_mutual_information_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.683116883116883, 'auroc': 0.7202520480650364, 'sensitivity': 0.8157828863346104, 'specificity': 0.40461123824052886, 'f1_score': 0.779973847960542}
+--------------------------------
+_edge_dir_prefixpatels_conditional_dependence_measures_kappa_patels_conditional_dependence_measures_kappa_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6779220779220779, 'auroc': 0.6601584736196904, 'sensitivity': 0.7843330386089008, 'specificity': 0.4362593440122044, 'f1_score': 0.7695258570300603}
+--------------------------------
+_edge_dir_prefixpatels_conditional_dependence_measures_tau_patels_conditional_dependence_measures_tau_epochs200_edge_percent_to_keep0.2_
+{'accuracy': 0.6051948051948052, 'auroc': 0.5690139979492935, 'sensitivity': 0.7105338441890167, 'specificity': 0.3961901856089499, 'f1_score': 0.7114750784757419}
+--------------------------------
